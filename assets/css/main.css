@@ -1041,11 +1041,20 @@ section {
     font-size: 28px;
   }
 }
+@media screen and (max-width:575px){
+  .about .nav-pills li + li {
+    margin-left: 8px;
+  }
+  .about .nav-link a{
+    font-size: 10px;
+    margin: 0px;
+  }
+}
 .about .nav-pills {
   border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
 }
 .about .nav-pills li + li {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .about .nav-link {
   background: none;
