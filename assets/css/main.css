@@ -275,6 +275,8 @@ section {
 @media (max-width: 1279px) {
   .header .btn-getstarted, .header .btn-getstarted:focus {
     margin-right: 50px;
+  padding: 6px 18px;
+
   }
 }
 
@@ -536,10 +538,11 @@ section {
   background: url("../img/hero-bg.png") center center;
   background-size: cover;
   position: relative;
-  padding: 120px 0 60px;
+  padding: 90px 0 40px;
+  margin-top: -15px;
 }
 .hero-animated h2 {
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   font-size: 48px;
   font-weight: 300;
   color: var(--color-secondary);
@@ -555,7 +558,7 @@ section {
   font-weight: 400;
 }
 .hero-animated .animated {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 @media (min-width: 992px) {
@@ -587,27 +590,8 @@ section {
 .hero-animated .btn-get-started:hover {
   background: rgba(var(--color-primary-rgb), 0.8);
 }
-.hero-animated .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  font-family: var(--font-secondary);
-  color: var(--color-secondary);
-  font-weight: 600;
-}
-.hero-animated .btn-watch-video i {
-  color: var(--color-primary);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-.hero-animated .btn-watch-video:hover {
-  color: var(--color-primary);
-}
-.hero-animated .btn-watch-video:hover i {
-  color: rgba(var(--color-primary-rgb), 0.8);
-}
+
+
 @media (max-width: 640px) {
   .hero-animated h2 {
     font-size: 32px;
@@ -616,9 +600,7 @@ section {
     font-size: 18px;
     margin-bottom: 30px;
   }
-  .hero-animated .btn-get-started, .hero-animated .btn-watch-video {
-    font-size: 14px;
-  }
+  
 }
 
 @-webkit-keyframes up-down {
@@ -658,7 +640,7 @@ section {
 }
 @media (max-width: 640px) {
   .hero .container {
-    padding: 0 60px;
+    padding: 0 20px;
   }
 }
 .hero h2 {
@@ -1085,14 +1067,14 @@ section {
   border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
 }
 .about .nav-pills li + li {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .about .nav-link {
   background: none;
   font-size: 18px;
   font-weight: 400;
   color: var(--color-secondary);
-  padding: 12px 0;
+  padding: 10px 0;
   margin-bottom: -2px;
   border-radius: 0;
   font-family: var(--font-secondary);
@@ -1116,7 +1098,7 @@ section {
 .about .tab-content i {
   font-size: 22px;
   line-height: 0;
-  margin-right: 8px;
+  margin-right: 4px;
   color: var(--color-primary);
 }
 
@@ -1582,11 +1564,18 @@ section {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .slide-container{
     width: 100%;
     height: 100px;
   }
+  .hero-animated{
+    padding-top: 0;
+    margin-top: -15px;
+    margin-bottom: 0px;
+  }
+  
+  
 }
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1623,6 +1612,7 @@ section {
     margin: 0 10px;
     padding: 15px;
   }
+  
 }
 .portfolio .portfolio-item {
   position: relative;
@@ -1874,89 +1864,6 @@ section {
 .contact .php-email-form {
   width: 100%;
   background: var(--color-white);
-}
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-.contact .php-email-form .error-message {
-  display: none;
-  color: var(--color-white);
-  background: var(--color-red);
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-.contact .php-email-form .sent-message {
-  display: none;
-  color: var(--color-white);
-  background: var(--color-green);
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .loading {
-  display: none;
-  background: var(--color-white);
-  text-align: center;
-  padding: 15px;
-}
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--color-green);
-  border-top-color: var(--color-white);
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-.contact .php-email-form input[type=text], .contact .php-email-form input[type=email], .contact .php-email-form textarea {
-  border-radius: 0px;
-  box-shadow: none;
-  font-size: 14px;
-}
-.contact .php-email-form input[type=text]:focus, .contact .php-email-form input[type=email]:focus, .contact .php-email-form textarea:focus {
-  border-color: var(--color-secondary-light);
-}
-.contact .php-email-form input[type=text], .contact .php-email-form input[type=email] {
-  height: 48px;
-  padding: 10px 15px;
-}
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-  height: 290px;
-}
-.contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 13px 50px;
-  color: var(--color-white);
-  transition: 0.4s;
-  border-radius: 0;
-}
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(var(--color-primary-rgb), 0.85);
-}
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -2705,12 +2612,14 @@ section {
 .iconsn{
   width: 83px;
   height: 68px;
-  padding: 8px;
+  padding-top: 8px;
+  margin-left: 23px;
 }
 .iconsP3{
   width: 83px;
   height: 76px;
-  padding: 8px;
+  padding-top: 8px;
+  margin-right: 20px;
 }
 .Arrows{
   height: 40px;
@@ -2737,7 +2646,11 @@ section {
 .logo-header{
   width: 100px;
   height: 60px;
-  margin-left: 40px;
+  margin-left: 0px;
+}
+.inconsNe{
+  width: 75px;
+  height:75px;
 }
 .popup {
   display: none;
@@ -2785,4 +2698,10 @@ section {
 }
 #name:focus{
   border:5px solid rgb(195, 195, 249);
+}
+@media screen and (max-width:575px){
+  .icons-footer{
+    width: 180px;
+    height: 80px;
+  }
 }
