@@ -1045,7 +1045,7 @@ section {
   border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
 }
 .about .nav-pills li + li {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .about .nav-link {
   background: none;
@@ -1065,6 +1065,11 @@ section {
 @media (max-width: 575px) {
   .about .nav-link {
     font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .about .nav-link a{
+    padding: 6px;
   }
 }
 .about .tab-content h4 {
