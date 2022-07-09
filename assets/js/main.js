@@ -301,3 +301,16 @@ function scrolldiv() {
   var elem = document.getElementById("scrollsection");
   elem.scrollIntoView();
 }
+
+function sends(){
+  var name=document.getElementById('name').value;
+  var subject=document.getElementById('subject').value;
+  var job=document.getElementById('job').value;
+  var email=document.getElementById('email').value;
+  if (job==''){
+    alert('fill the All field')
+  }else{
+  window.open('mailto: marketing@launchingstation.com?subject=Career Submission &body= Job Name:'+ 
+  [job] +'    Your full name:' + [name] + '   Subject:'+[subject] + '    Email:'+[email]+  '        Attch Your Resume or CV in this email')
+}
+};

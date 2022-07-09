@@ -2698,3 +2698,63 @@ section {
     height: 80px;
   }
 }
+.career-icon{
+  margin-bottom: 24px;
+  width: 180px;
+  height: 80px;
+
+}
+
+.content-career{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.career-tab{
+  width: auto;
+  height: auto;
+  color: black;
+  background-color: whitesmoke;
+}
+.career .nav-link {
+  border: 0;
+  padding: 25px 20px;
+  color: var(--color-secondary);
+  box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+  border-left: 4px solid #0EA2BD;
+ 
+  
+}
+
+.career .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+.career .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  color: var(--color-secondary);
+}
+.career .nav-link:hover {
+  color: var(--color-primary);
+  transition-delay: 0.3s;
+}
+
+
+.career .nav-item:hover{
+  font-weight: bolder;
+  color: #0EA2BD;
+}
+.icons-career{
+  width: 83px;
+  height: 80px;
+}
